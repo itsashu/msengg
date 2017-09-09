@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <DBSettings>
+        <DBNAME>radspeed</DBNAME>
+        <DBLOGIN>root</DBLOGIN>
+        <DBPASSWORD>mysql123</DBPASSWORD>
+        <DBHOST>localhost</DBHOST>
+        <DBPORT>3306</DBPORT>
+    </DBSettings>
+
+    <APPLICATION>
+        <TITLE>M.S Engineering</TITLE>
+    </APPLICATION>
+    <WEBLOGS>
+        <LOGFILECOUNT>20</LOGFILECOUNT>
+        <LOGFILESIZE>20</LOGFILESIZE>
+        <LOGLEVEL>DEBUG</LOGLEVEL>
+    </WEBLOGS>
+
+
+</configuration>
+
+

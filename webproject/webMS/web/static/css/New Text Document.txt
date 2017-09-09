@@ -1,0 +1,3 @@
+map in contact page
+about -> work
+homepage-note css id
