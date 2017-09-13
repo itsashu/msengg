@@ -1,3 +1,5 @@
 map in contact page
 about -> work
 homepage-note css id
+change icons
+change webaddress to static

@@ -60,7 +60,7 @@ hr {
 }
 
 .section-title {
-  padding-bottom: 32px;
+  padding-bottom: 0px;
 }
 
 .medium-icon {
@@ -69,8 +69,8 @@ hr {
 
 #work,#about, #team, 
 #portfolio, #pricing, #contact {
-   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px/*100px*/;
+  padding-bottom: 220px/*100px*/;
 }
 
 
@@ -287,7 +287,12 @@ home section
   font-size: 14px;
 }
 #home hr {
-  width: 240px;
+  width: 300px;
+}
+#home .note img{
+    width: 300px;
+    height: 150px;
+    opacity: 0.6;
 }
 #home .btn {
   background: transparent;
@@ -316,34 +321,96 @@ home section
 	background: transparent;
   	color: #ffffff;
 }
-
+/*#home .note {*/
+/*    padding-top: 500px;    */
+/*}*/
 /* ==========================================================================
-work section
+about work  section
 ========================================================================== */
-#work {
-    text-align: center;
+#about {
+  text-align: center;
+  background:rgba(100, 100, 100,0.30) url("../images/ms-logo.png");
+  /*background-size: cover;*/
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /*background-color: rgba(25,25,25,0.02);*/
 }
-#work .col-md-4 {
+
+#about .col-md-4 {
   padding: 28px;
   position: relative;
   transition: all 0.4s ease-in-out;
+  color:black;
+  opacity: 1;
 }
-#work .col-md-4:hover {
-  background-color: #ffffff;
-  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.20);
+#about .col-md-5,#about .col-md-3:hover,#about .col-md-4:hover {
+  background-color: rgba(100, 100, 100,0.50)/*#ffffff*/;
+  box-shadow: 0px 10px 15px 0px rgba(60, 60, 60, 1);
+  color: white;
+  opacity: 1;
+  font-weight: bold; 
 }
-#work h3 {
+#about h3 {
   font-size: 18px;
 }
 
+/* ==========================================================================
+carosel section
+========================================================================== */
+.carosel-img {
+  display: block;
+  height: 200px;
+  margin-right: 10px;
+  height: 140px;
+  width: 160px;
+  background: transparent;
+  opacity: 0.95;
+}
+
+.c-carousel {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.c-carousel__arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  background-color: rgba(100, 100, 100,0.80);
+}
+c-carousel__arrow :hover{
+  shadow:/* 0px 10px 15px 0px */rgba(60, 60, 60, 1);  
+}
+.c-carousel__arrow--left {
+  left: 2px;
+}
+.c-carousel__arrow--right {
+  right: 2px;
+}
+.c-carousel__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}
 
 /* ==========================================================================
 about section
 ========================================================================== */
+/*
 #about {
   background: #3B3B3B;
   color: #ffffff;
 }
+
 .nav-tabs {
   margin-top: 20px;
   border-bottom: 1px solid #606060;
@@ -383,7 +450,7 @@ about section
 .tab-content a:hover, .tab-content a:link {
 	color: #FF0;
 	text-decoration: none;
-}
+}*/
 
 /* ==========================================================================
 team section
