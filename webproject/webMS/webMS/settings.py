@@ -56,7 +56,7 @@ ROOT_URLCONF = 'webMS.urls'
 TEMPLATE_DIRS = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["F:/WebProject1/main/projects/webproject/webMS/web"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
