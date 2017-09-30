@@ -24,6 +24,7 @@ from webMS.settings import *
 urlpatterns = patterns('web.views',
     url(r'^index/(?P<some_data>[\w-]+)/$', 'index', name = 'index'),
     url(r'^home', 'home', name = 'home'),
+    url(r'^catalog', 'catalog', name = 'catalog'),
     url(r'^$', 'home', name = 'home'), 
    )
 
