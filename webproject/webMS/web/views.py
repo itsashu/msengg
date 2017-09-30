@@ -11,6 +11,10 @@ def home(request):
     """ This function loads home page."""
     return render(request, "homepage.html")
 
+def catalog(request):
+    """ This function loads home page."""
+    return render(request, "catalog.html")
+
 def index(request,some_data):
     """ This function handles redirection of user to their profiles based on login. """
 
