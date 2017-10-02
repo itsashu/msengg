@@ -294,6 +294,13 @@ home section
     height: 150px;
     opacity: 0.6;
 }
+
+#home .note img:hover{
+    width: 350px;
+    height: 210px;
+    opacity: 1;
+}
+
 #home .btn {
   background: transparent;
   border: 4px solid #ffffff;
@@ -316,14 +323,11 @@ home section
   border-color: transparent;
 }
 #home .btn-danger:hover {
-	border: 4px solid #ffffff;
-  	border-radius: 0;
-	background: transparent;
-  	color: #ffffff;
+    border: 4px solid #ffffff;
+    border-radius: 0;
+    background: transparent;
+    color: #ffffff;
 }
-/*#home .note {*/
-/*    padding-top: 500px;    */
-/*}*/
 /* ==========================================================================
 about work  section
 ========================================================================== */
@@ -334,6 +338,7 @@ about work  section
   background-position: top;
   background-repeat: no-repeat;
   background-size: auto;
+  background-attachment: fixed;
   /*background-color: rgba(25,25,25,0.02);*/
 }
 
@@ -776,4 +781,18 @@ media quires for mobile
   #home h3 {
     font-size: 12px;
   }
+}
+
+/* ==========================================================================
+catalog section
+========================================================================== */
+.catalog div a img{
+    width: 300px;
+    height: 225px;
+    
+}
+.catalog div{
+    margin: 10px;
+
+    box-shadow: 3px;
 }
