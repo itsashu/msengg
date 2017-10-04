@@ -322,7 +322,7 @@
 <script src="/static/js/wow.min.js"></script>
 <!--<script src="/static/js/custom.js"></script>-->
 <script>
-// ISOTOPE FILTER
+    // ISOTOPE FILTER
 jQuery(document).ready(function($){
 
   if ( $('.iso-box-wrapper').length > 0 ) { 
@@ -335,7 +335,7 @@ jQuery(document).ready(function($){
         $container.isotope({
         layoutMode: 'fitRows',
         itemSelector: '.iso-box',
-	filter: '.cooking'
+        filter: '.cooking'
         });
 
         $imgs.load(function(){
@@ -375,6 +375,11 @@ jQuery(document).ready(function($){
   }
 
 });
+
+  // NIVO LIGHTBOX
+  $('.iso-box-section a').nivoLightbox({
+        effect: 'fadeScale',
+    });
 </script>
 </body>
 </html>
