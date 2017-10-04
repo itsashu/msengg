@@ -100,7 +100,7 @@ $(function(){
        "static/images/home-bg-slideshow1.jpg", 
        "static/images/home-images/index.jpg",
        "static/images/home-images/index1.jpg",
-       "static/images/home-images/index2.jpg",
+       //"static/images/home-images/index2.jpg",
        "static/images/home-images/index3.jpg",
        "static/images/home-images/index4.jpg",
        "static/images/home-images/index5.jpg",

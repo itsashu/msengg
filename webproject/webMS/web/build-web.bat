@@ -1,7 +1,7 @@
 REM make build an copy files
 
-set TopDir=..\..\..\..\..\build
-set WebDir= ..\..\..\..\..\build\web
+set TopDir=..\..\..\build
+set WebDir= ..\..\..\build\web
 if not exist %TopDir%\web md %TopDir%\web
 if not exist %TopDir%\conf md %TopDir%\conf
 

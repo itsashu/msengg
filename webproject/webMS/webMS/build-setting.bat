@@ -1,6 +1,6 @@
 REM make build an copy files
 
-set TopDir=..\..\..\..\..\build
+set TopDir=..\..\..\build
 
 if not exist %TopDir%\webMS md %TopDir%\webMS
 if not exist %TopDir%\webMS\apache md %TopDir%\webMS\apache

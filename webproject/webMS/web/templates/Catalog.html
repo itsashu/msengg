@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Catalog</title>
+	<title>Products</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -320,6 +320,61 @@
 <script src="/static/js/nivo-lightbox.min.js"></script>
 <script src="/static/js/jquery.backstretch.min.js"></script>
 <script src="/static/js/wow.min.js"></script>
-<script src="/static/js/custom.js"></script>
+<!--<script src="/static/js/custom.js"></script>-->
+<script>
+// ISOTOPE FILTER
+jQuery(document).ready(function($){
+
+  if ( $('.iso-box-wrapper').length > 0 ) { 
+
+      var $container  = $('.iso-box-wrapper'), 
+        $imgs     = $('.iso-box img');
+
+      $container.imagesLoaded(function () {
+
+        $container.isotope({
+        layoutMode: 'fitRows',
+        itemSelector: '.iso-box',
+	filter: '.cooking'
+        });
+
+        $imgs.load(function(){
+          $container.isotope('reLayout');
+        })
+
+      });
+
+      //filter items on button click
+
+      $('.filter-wrapper li a').click(function(){
+
+          var $this = $(this), filterValue = $this.attr('data-filter');
+
+      $container.isotope({ 
+        filter: filterValue,
+        animationOptions: { 
+            duration: 750, 
+            easing: 'linear', 
+            queue: false, 
+        }                
+      });             
+
+      // don't proceed if already selected 
+
+      if ( $this.hasClass('selected') ) { 
+        return false; 
+      }
+
+      var filter_wrapper = $this.closest('.filter-wrapper');
+      filter_wrapper.find('.selected').removeClass('selected');
+      $this.addClass('selected');
+
+        return false;
+      }); 
+
+  }
+
+});
+</script>
 </body>
 </html>
