@@ -221,7 +221,7 @@ navigation section
 }
 .custom-navbar .navbar-brand .navbar-toggle {
     background: #00c6d7;
-    padding: 4px 6px;
+    padding: 0px 0px /*4px 6px*/;
     font-size: 16px;
     color: #fff;
     }
@@ -229,10 +229,12 @@ navigation section
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    height: 100%;
     }
 .custom-navbar .nav li a:hover {
-  	background: transparent;
-   color: #eeeeee;
+    /*background: rgba(75,75,75,0.5);*/
+    background-color: transparent;
+    color: pink;
 }
 .custom-navbar .nav > li > a:focus {
   background-color: transparent;
@@ -244,12 +246,13 @@ navigation section
     }
 .custom-navbar .navbar-toggle {
         border: none;
-        padding-top: 10px;
+        padding-top: 0px/*10px*/;
     }
 .custom-navbar .navbar-toggle .icon-bar {
         background: #00c6d7;
         border-color: transparent;
     }
+    
 @media(min-width:768px){
     .custom-navbar {
             background: rgba(0,0,0,0.2) /* #4B4B4B*/;
@@ -262,7 +265,18 @@ navigation section
             background: rgba(0,0,0,0.2) /*#4B4B4B*/;
         }
 }
-
+.navbar-collapse{
+    height: 100%;
+}
+.custom-navbar .navbar-header{
+    padding-top: 0px;
+}
+.subtitle{
+    color: #ff00ff;
+    float: left;
+    text-align: left;
+    /*padding-left: 5px;*/
+}
 
 /* ==========================================================================
 home section
