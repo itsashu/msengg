@@ -382,26 +382,36 @@ carosel section
 .c-carousel {
   width: 100%;
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .c-carousel__arrow {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 50%;
+  top: 0%;
   z-index: 1;
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
   background-color: rgba(100, 100, 100,0.80);
 }
-c-carousel__arrow :hover{
-  shadow:/* 0px 10px 15px 0px */rgba(60, 60, 60, 1);  
+.c-carousel__arrow:hover{
+  background-color: black;
 }
 .c-carousel__arrow--left {
-  left: 2px;
+  left: 150px;
+  box-shadow: 10px -10px 15px 0px rgba(60, 60, 60, 0.5);
 }
 .c-carousel__arrow--right {
-  right: 2px;
+  right: 150px;
+  box-shadow: -10px 10px 15px 0px rgba(60, 60, 60, 0.5);
+}
+.c-carousel__arrow--left:hover{
+  left: 145px;
+  box-shadow: 15px -15px 15px 5px rgba(60, 60, 60, 0.9);
+}
+.c-carousel__arrow--right:hover{
+  right: 145px;
+  box-shadow: -15px 15px 15px 5px rgba(60, 60, 60, 0.8);
 }
 .c-carousel__slides {
   display: -webkit-box;
