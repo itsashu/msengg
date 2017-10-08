@@ -46,6 +46,9 @@ $(function(){
         ],  {duration: 2000, fade: 750});
     });
   })
+  
+  // HOMEPAGE TITLE
+  //odoo.default({ el:'.js-odoo', from: 'NOVEMBER16', to: 'CODEVEMBER', animationDelay: 1000 });
 
   // CAROSEL
   'use strict';
