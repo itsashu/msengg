@@ -22,7 +22,7 @@ h1, h2, h3, h4 {
 .subheading {
   font-size: 14px;
   font-weight: bold;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 .bold {
   font-weight: bold;
@@ -698,7 +698,8 @@ contact section
   color: #ffffff;
 }
 #contact h2 {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 #contact h3 {
   font-size: 16px;
@@ -706,22 +707,22 @@ contact section
   letter-spacing: 1px;
 }
 #contact .medium-icon {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 10px;
 }
 #contact .contact-info div {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 0px;
+  padding-bottom: 5px;
 }
 #contact form {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 #contact .form-control {
   border: 2px solid #ffffff;
   border-radius: 0;
   box-shadow: none;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   transition: all 0.4s ease-in-out;
 }
 #contact input {
@@ -731,7 +732,7 @@ contact section
   background: #00c6d7;
   border: 3px solid #00c6d7;
   letter-spacing: 1px;
-  margin-top: 18px;
+  margin-top: 10px;
   height: 50px;
   color: #ffffff;
 }
