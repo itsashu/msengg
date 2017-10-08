@@ -335,7 +335,17 @@ home section
     background: transparent;
     color: #ffffff;
 }
-#home .neon {
+.embossedtext {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.embossed {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset -2px 2px 1px rgba(0, 0, 0, 0.2), -2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.neon {
   color: #fff;
   text-shadow:
     0 0 5px #fff,
@@ -346,6 +356,24 @@ home section
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
+}
+.linear-wipe {
+  text-align: center;
+  background: linear-gradient(to right, white 20%, #00ff00 40%, red 60%, blue 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* ==========================================================================
